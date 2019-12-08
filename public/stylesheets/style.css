@@ -1,0 +1,19 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+tr.pass td {
+  padding: 10px;
+  background-color: #8FBCBB;
+}
+
+tr.fail td {
+  padding: 10px;
+  background-color: #BF616A;
+  color: white;
+}
