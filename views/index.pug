@@ -2,34 +2,92 @@ extends layout
 
 block content
   h1 Builds
-  table
-    tr.pass
-      td 1
-      td Jenkins
-      td AgentMessageGeneratorJava
-      td That's some serious tuition
-    tr.fail
-      td 1
-      td Jenkins
-      td AgentMessageGeneratorJava
-      td 3 vulnerabilites found for SEVERE and the threshold is 2
-    tr.pass
-      td 1
-      td Travis
-      td AgentMessageGeneratorNode
-      td That's some serious tuition
-    tr.pass
-      td 1
-      td Jenkins
-      td AgentMessageGeneratorJava
-      td That's some serious tuition
-    tr.pass
-      td 1
-      td Jenkins
-      td AgentMessageGeneratorJava
-      td That's some serious tuition
-    tr.pass
-      td 1
-      td Jenkins
-      td AgentMessageGeneratorJava
-      td That's some serious tuition
+  div.container-fluid
+    div.row
+      div.col-sm
+        form.form
+          select.form-control
+            option All Integrations
+            option Jenkins
+            option Travis
+            option Circle CI
+            option Bamboo
+      div.col-sm
+        form.form
+          select.form-control
+            option All Applications
+            option AgentMessageGeneratorJava
+            option AgentMessageGeneratorNode
+            option WebGoat
+      div.col-sm
+        form.form
+          select.form-control
+            option All Importances
+            option Critical
+            option High
+            option Medium
+
+    div.row
+      div.col
+        table.table.table-hover
+          tbody
+            tr.pass
+              td
+                span.dot-pass
+              td 108
+              td an hour ago
+              td Jenkins
+              td AgentMessageGeneratorJava
+              td 
+              td 
+                a build
+            tr.fail
+              td
+                span.dot-fail
+              td 107
+              td.date two hours ago
+              td Jenkins
+              td AgentMessageGeneratorNode
+              td.explaination 3 vulnerabilites found for SEVERE and the threshold is 2
+              td 
+                a build
+            tr.pass
+              td
+                span.dot-pass
+              td 106
+              td 1 day ago
+              td Travis
+              td WebGoat
+              td 
+              td 
+                a build
+            tr.pass
+              td
+                span.dot-pass
+              td 105
+              td 1 day ago
+              td Jenkins
+              td AgentMessageGeneratorJava
+              td 
+              td 
+                a build
+            tr.pass
+              td
+                span.dot-pass
+              td 104
+              td 2 days ago
+              td Jenkins
+              td AgentMessageGeneratorJava
+              td 
+              td 
+                a build
+            tr.pass
+              td
+                span.dot-pass
+              td 103
+              td 3 days ago
+              td Jenkins
+              td AgentMessageGeneratorJava
+              td 
+              td 
+                a build
